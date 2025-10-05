@@ -1,6 +1,6 @@
 {
-    "name": "oxid-esales/module-template",
-    "description": "Module Template – Clean Skeleton for OXID Modules",
+    "name": "fresh-advance/oxid-per-line-vat",
+    "description": "Changing how OXID default VAT calculation works - VAT is calculated per line item, not on the total sum.",
     "type": "oxideshop-module",
     "keywords": [
         "oxid",
@@ -8,41 +8,40 @@
         "eShop"
     ],
     "license": [
-        "proprietary"
+        "mit"
     ],
     "require": {
         "php": "^8.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require-dev": {
-        "symfony/filesystem": "^6.4",
-        "phpstan/phpstan": "^2.0.2",
-        "squizlabs/php_codesniffer": "^3.10",
-        "phpmd/phpmd": "^2.15",
-        "oxid-esales/oxideshop-ce": "dev-b-7.3.x",
-        "phpunit/phpunit": "~10.5.17",
-        "mikey179/vfsstream": "~1.6.8",
-        "codeception/codeception": "^5.1",
-        "codeception/module-asserts": "^3.0",
-        "codeception/module-db": "^3.1",
-        "codeception/module-filesystem": "^3.0",
-        "codeception/module-webdriver": "^4.0",
-        "oxid-esales/codeception-modules": "dev-b-7.3.x",
-        "oxid-esales/codeception-page-objects": "dev-b-7.3.x",
-        "oxid-esales/developer-tools": "dev-b-7.3.x"
-    },
     "conflict": {
-        "oxid-esales/oxideshop-ce": "<7.3"
+      "oxid-esales/oxideshop-ce": "<7.1.0"
+    },
+    "require-dev": {
+      "oxid-esales/oxideshop-ce": "dev-b-7.1.x",
+      "phpunit/phpunit": "^11",
+      "phpstan/phpstan": "^2.1",
+      "squizlabs/php_codesniffer": "3.*",
+      "phpmd/phpmd": "^2.11",
+      "mikey179/vfsstream": "~1.6.8",
+      "codeception/codeception": "^5.2",
+      "codeception/module-asserts": "^3.0",
+      "codeception/module-db": "^3.0",
+      "codeception/module-filesystem": "^3.0",
+      "codeception/module-webdriver": "^4.0",
+      "oxid-esales/codeception-modules": "dev-b-7.1.x",
+      "oxid-esales/codeception-page-objects": "dev-b-7.1.x",
+      "oxid-esales/developer-tools": "dev-b-7.1.x"
     },
     "autoload": {
         "psr-4": {
-            "OxidEsales\\ModuleTemplate\\": "src/"
+            "FreshAdvance\\OXIDPerLineVAT\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OxidEsales\\ModuleTemplate\\Tests\\": "tests/",
+            "FreshAdvance\\OXIDPerLineVAT\\Tests\\": "tests/",
             "OxidEsales\\EshopCommunity\\Tests\\": "./vendor/oxid-esales/oxideshop-ce/tests"
         }
     },
@@ -73,7 +72,7 @@
 
         "tests-codeception": [
             "Composer\\Config::disableProcessTimeout",
-            "THEME_ID=apex MODULE_IDS=oe_moduletemplate SHOP_ROOT_PATH=/var/www vendor/bin/codecept run Acceptance -c tests/codeception.yml --no-redirect"
+            "THEME_ID=apex MODULE_IDS=fa_perlinevat SHOP_ROOT_PATH=/var/www vendor/bin/codecept run Acceptance -c tests/codeception.yml --no-redirect"
         ],
 
         "tests-all": [
