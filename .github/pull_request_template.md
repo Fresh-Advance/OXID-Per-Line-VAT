@@ -1,6 +1,3 @@
-## Issue
-<!--- Please link to the issue here (on https://bugs.oxid-esales.com/), if the Pull request is related to any. -->
-
 ## Description
 <!--- Describe your changes in detail, describe what you have done and why -->
 
