@@ -1,7 +1,7 @@
-# PDF Invoice module for OXID eShop
+# Per-Line-VAT module for OXID eShop
 
-[![Development](https://github.com/Fresh-Advance/OXID-Per-Line-VAT/actions/workflows/trigger.yaml/badge.svg?branch=b-7.1.x)](https://github.com/Fresh-Advance/Invoice/actions/workflows/trigger.yaml)
-[![Latest Version](https://img.shields.io/packagist/v/Fresh-Advance/OXID-Per-Line-VAT?logo=composer&label=latest&include_prereleases&color=orange)](https://packagist.org/packages/Fresh-Advance/Invoice)
+[![Development](https://github.com/Fresh-Advance/OXID-Per-Line-VAT/actions/workflows/trigger.yaml/badge.svg?branch=b-7.1.x)](https://github.com/Fresh-Advance/OXID-Per-Line-VAT/actions/workflows/trigger.yaml)
+[![Latest Version](https://img.shields.io/packagist/v/Fresh-Advance/OXID-Per-Line-VAT?logo=composer&label=latest&include_prereleases&color=orange)](https://packagist.org/packages/Fresh-Advance/OXID-Per-Line-VAT)
 [![PHP Version](https://img.shields.io/packagist/php-v/Fresh-Advance/OXID-Per-Line-VAT)](https://github.com/Fresh-Advance/OXID-Per-Line-VAT)
 
 ## Limitations
@@ -20,8 +20,7 @@ Note: Not all latest features are available in the older branches.
 Module is available on packagist and installable via composer
 
 ```
-composer require fresh-advance/oxid-per-line-vat
-./vendor/bin/oe-eshop-doctrine_migration migrations:migrate fa_perlinevat
+composer require fresh-advance/oxid-per-line-vat:1.0
 ```
 
 # Development installation

@@ -14,15 +14,15 @@ $sMetadataVersion = '2.1';
  * Module information
  */
 $aModule = [
-    'id'          => 'fa_perlinevat',
-    'title'       => 'OXID eSales Module Template (OEMT)',
-    'description' => 'Module Template – Clean Skeleton for OXID Modules',
-    'thumbnail'   => 'pictures/logo.png',
+    'id' => 'fa_perlinevat',
+    'title' => 'Per-Line-VAT module for OXID eShop',
+    'description' => 'The module changes the OXID default grouped VAT calculation to per-line calculation',
+    'thumbnail' => 'pictures/logo.png',
     'version' => '1.0.0',
-    'author'      => 'MB Arbatos Klubas',
-    'url'         => 'https://github.com/OXID-eSales/module-template',
-    'email'       => 'info@oxid-esales.com',
-    'extend'      => [
+    'author' => 'MB Arbatos Klubas',
+    'url' => 'https://github.com/Fresh-Advance/OXID-Per-Line-VAT',
+    'email' => 'anton@fedurtsya.com',
+    'extend' => [
         \OxidEsales\Eshop\Core\PriceList::class => \FreshAdvance\OXIDPerLineVAT\Eshop\Core\PriceList::class
     ],
 ];
