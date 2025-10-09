@@ -14,7 +14,7 @@
         <properties>
             <property name="exceptions">
                 <value>
-                    \Symfony\Component\Filesystem\Path
+                    \OxidEsales\EshopCommunity\Core\Di\ContainerFacade
                 </value>
             </property>
         </properties>

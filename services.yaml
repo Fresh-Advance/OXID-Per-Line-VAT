@@ -3,3 +3,13 @@ services:
   _defaults:
     public: false
     autowire: true
+    bind:
+      OxidEsales\Eshop\Core\Utils: '@=service("FreshAdvance\\OXIDPerLineVAT\\Core\\Registry").getUtils()'
+
+  FreshAdvance\OXIDPerLineVAT\Service\PriceListVatCalculatorInterface:
+    class: FreshAdvance\OXIDPerLineVAT\Service\PriceListVatCalculator
+    public: true
+
+  FreshAdvance\OXIDPerLineVAT\Core\Registry:
+    class: OxidEsales\Eshop\Core\Registry
+    public: true

@@ -22,5 +22,7 @@ $aModule = [
     'author'      => 'MB Arbatos Klubas',
     'url'         => 'https://github.com/OXID-eSales/module-template',
     'email'       => 'info@oxid-esales.com',
-    'extend'      => [],
+    'extend'      => [
+        \OxidEsales\Eshop\Core\PriceList::class => \FreshAdvance\OXIDPerLineVAT\Eshop\Core\PriceList::class
+    ],
 ];
