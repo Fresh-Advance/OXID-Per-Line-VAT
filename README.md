@@ -4,16 +4,17 @@
 [![Latest Version](https://img.shields.io/packagist/v/Fresh-Advance/OXID-Per-Line-VAT?logo=composer&label=latest&include_prereleases&color=orange)](https://packagist.org/packages/Fresh-Advance/OXID-Per-Line-VAT)
 [![PHP Version](https://img.shields.io/packagist/php-v/Fresh-Advance/OXID-Per-Line-VAT)](https://github.com/Fresh-Advance/OXID-Per-Line-VAT)
 
-## Limitations
-
-* Tested with:
-    * Shop 7.1 - PHP 8.1, 8.2, MySQL 5.7 and 8.0
-
 ## Branch compatibility
 
-* Branch b-7.1.x is compatible with OXID Shop compilation 7.1.0 and up
+* Branch **b-7.1.x** is compatible with OXID Shop compilation **7.1.0 and up**
 
 Note: Not all latest features are available in the older branches.
+
+## Version compatibility
+
+* v1.x is compatible with OXID Shop compilation 7.1.x
+
+Note: Not all latest features and fixes are available in older than the last versions - always prefer the latest possible release.
 
 ## Installation
 
