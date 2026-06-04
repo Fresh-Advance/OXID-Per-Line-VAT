@@ -19,7 +19,7 @@
       "oxid-esales/oxideshop-ce": "<7.1.0"
     },
     "require-dev": {
-      "oxid-esales/oxideshop-ce": "dev-b-7.2.x",
+      "oxid-esales/oxideshop-ce": "dev-b-7.3.x",
       "phpunit/phpunit": "^11",
       "phpstan/phpstan": "^2.1",
       "squizlabs/php_codesniffer": "3.*",
@@ -30,9 +30,9 @@
       "codeception/module-db": "^3.0",
       "codeception/module-filesystem": "^3.0",
       "codeception/module-webdriver": "^4.0",
-      "oxid-esales/codeception-modules": "dev-b-7.2.x",
-      "oxid-esales/codeception-page-objects": "dev-b-7.2.x",
-      "oxid-esales/developer-tools": "dev-b-7.2.x"
+      "oxid-esales/codeception-modules": "dev-b-7.3.x",
+      "oxid-esales/codeception-page-objects": "dev-b-7.3.x",
+      "oxid-esales/developer-tools": "dev-b-7.3.x"
     },
     "autoload": {
         "psr-4": {

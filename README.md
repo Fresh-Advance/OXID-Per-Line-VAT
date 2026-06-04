@@ -1,11 +1,12 @@
 # Per-Line-VAT module for OXID eShop
 
-[![Development](https://github.com/Fresh-Advance/OXID-Per-Line-VAT/actions/workflows/trigger.yaml/badge.svg?branch=b-7.2.x)](https://github.com/Fresh-Advance/OXID-Per-Line-VAT/actions/workflows/trigger.yaml)
+[![Development](https://github.com/Fresh-Advance/OXID-Per-Line-VAT/actions/workflows/trigger.yaml/badge.svg?branch=b-7.3.x)](https://github.com/Fresh-Advance/OXID-Per-Line-VAT/actions/workflows/trigger.yaml)
 [![Latest Version](https://img.shields.io/packagist/v/Fresh-Advance/OXID-Per-Line-VAT?logo=composer&label=latest&include_prereleases&color=orange)](https://packagist.org/packages/Fresh-Advance/OXID-Per-Line-VAT)
 [![PHP Version](https://img.shields.io/packagist/php-v/Fresh-Advance/OXID-Per-Line-VAT)](https://github.com/Fresh-Advance/OXID-Per-Line-VAT)
 
 ## Branch compatibility
 
+* Branch **b-7.3.x** is compatible with OXID Shop compilation **7.3.0 and up**
 * Branch **b-7.2.x** is compatible with OXID Shop compilation **7.2.0 and up**
 * Branch **b-7.1.x** is compatible with OXID Shop compilation **7.1.0 and up**
 
@@ -13,7 +14,7 @@ Note: Not all latest features are available in the older branches.
 
 ## Version compatibility
 
-* v1.x is compatible with OXID Shop compilation 7.1.x-7.2.x
+* v1.x is compatible with OXID Shop compilation 7.1.x-7.3.x
 
 Note: Not all latest features and fixes are available in older than the last versions - always prefer the latest possible release.
 
@@ -47,7 +48,7 @@ echo MyProject && git clone https://github.com/Fresh-Advance/development.git $_ 
 
 2. Clone the repository to the source directory
 ```shell
-git clone --recurse-submodules https://github.com/Fresh-Advance/OXID-Per-Line-VAT.git --branch=b-7.2.x ./source
+git clone --recurse-submodules https://github.com/Fresh-Advance/OXID-Per-Line-VAT.git --branch=b-7.3.x ./source
 ```
 
 3. Run the recipe to setup the development environment
