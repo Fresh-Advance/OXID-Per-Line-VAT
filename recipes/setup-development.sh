@@ -42,6 +42,7 @@ $SCRIPT_PATH/parts/shared/require_twig_components.sh -e"${edition}" -b"b-7.1.x"
 $SCRIPT_PATH/parts/shared/require.sh -n"oxid-esales/developer-tools" -v"dev-b-7.1.x"
 $SCRIPT_PATH/parts/shared/require.sh -n"oxid-esales/oxideshop-doctrine-migration-wrapper" -v"dev-b-7.1.x"
 $SCRIPT_PATH/parts/shared/require_theme_dev.sh -t"apex" -b"b-7.1.x"
+$SCRIPT_PATH/parts/shared/require_demodata_package.sh -e"${edition}" -b"b-7.1.x"
 
 make up
 
