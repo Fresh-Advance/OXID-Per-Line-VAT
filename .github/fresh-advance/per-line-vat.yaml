@@ -6,10 +6,10 @@ install:
     transform: |
       {
         "require": {
-          "oxid-esales/apex-theme": "dev-b-7.4.x",
-          "oxid-esales/oxideshop-ce": "dev-b-7.4.x",
-          "oxid-esales/twig-admin-theme": "dev-b-7.4.x",
-          "oxid-esales/twig-component": "dev-b-7.4.x"
+          "oxid-esales/apex-theme": "dev-b-7.5.x",
+          "oxid-esales/oxideshop-ce": "dev-b-7.5.x",
+          "oxid-esales/twig-admin-theme": "dev-b-7.5.x",
+          "oxid-esales/twig-component": "dev-b-7.5.x"
         }
       }
   custom_script_container: |
@@ -50,7 +50,7 @@ sonarcloud:
   organization: 'TODO: CHANGE SONARCLOUD ORGANIZATION'
   project_name: 'fresh-advance/oxid-per-line-vat'
   project_key: 'TODO: CHANGE SONARCLOUD PROJECT KEY'
-  target_branch: 'b-7.4.x'
+  target_branch: 'b-7.5.x'
   parameters: >
     -Dsonar.language=php
     -Dsonar.scm.provider=git
