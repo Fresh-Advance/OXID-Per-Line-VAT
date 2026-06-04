@@ -41,13 +41,18 @@ $SCRIPT_PATH/parts/shared/require_shop_edition_packages.sh -e"${edition}" -v"dev
 $SCRIPT_PATH/parts/shared/require_twig_components.sh -e"${edition}" -b"b-7.2.x"
 $SCRIPT_PATH/parts/shared/require.sh -n"oxid-esales/developer-tools" -v"dev-b-7.2.x"
 $SCRIPT_PATH/parts/shared/require.sh -n"oxid-esales/oxideshop-doctrine-migration-wrapper" -v"dev-b-7.2.x"
-$SCRIPT_PATH/parts/shared/require_theme_dev.sh -t"twig" -b"b-7.2.x"
+$SCRIPT_PATH/parts/shared/require_theme_dev.sh -t"apex" -b"b-7.2.x"
+$SCRIPT_PATH/parts/shared/require_demodata_package.sh -e"${edition}" -b"b-7.2.x"
 
 make up
 
 docker compose exec php composer update --no-interaction
 
 $SCRIPT_PATH/parts/shared/setup_database.sh --no-demodata
+
+perl -pi\
+  -e 's#http://localhost.local/#https://localhost.local/#g;'\
+  source/source/config.inc.php
 
 docker compose exec -T php vendor/bin/oe-console oe:module:install ./
 docker compose exec -T php vendor/bin/oe-eshop-doctrine_migration migrations:migrate
