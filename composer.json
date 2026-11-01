@@ -20,7 +20,7 @@
     },
     "require-dev": {
       "oxid-esales/oxideshop-ce": "dev-b-7.5.x",
-      "phpunit/phpunit": "^11",
+      "phpunit/phpunit": "^13",
       "phpstan/phpstan": "^2.1",
       "squizlabs/php_codesniffer": "4.*",
       "phpmd/phpmd": "^2.11",
